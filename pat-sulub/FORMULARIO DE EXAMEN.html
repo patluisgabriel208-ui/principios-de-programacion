@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Calificación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 30px auto;
+        }
+
+        input {
+            width: 80px;
+            margin: 5px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+        }
+
+        #resultado {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Calculadora de Calificación</h2>
+
+    <h3>Tareas (60%)</h3>
+
+    <input type="number" id="t1" min="0" max="10" placeholder="T1">
+    <input type="number" id="t2" min="0" max="10" placeholder="T2">
+    <input type="number" id="t3" min="0" max="10" placeholder="T3">
+    <input type="number" id="t4" min="0" max="10" placeholder="T4">
+    <input type="number" id="t5" min="0" max="10" placeholder="T5">
+    <input type="number" id="t6" min="0" max="10" placeholder="T6">
+
+    <h3>Examen (40%)</h3>
+    <input type="number" id="examen" min="0" max="10" placeholder="Examen">
+
+    <br>
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            let tareas = [
+                Number(document.getElementById("t1").value),
+                Number(document.getElementById("t2").value),
+                Number(document.getElementById("t3").value),
+                Number(document.getElementById("t4").value),
+                Number(document.getElementById("t5").value),
+                Number(document.getElementById("t6").value)
+            ];
+
+            let examen = Number(document.getElementById("examen").value);
+
+            let promedioTareas =
+                tareas.reduce((a, b) => a + b, 0) / tareas.length;
+
+            let calificacionFinal =
+                (promedioTareas * 0.60) +
+                (examen * 0.40);
+
+            document.getElementById("resultado").innerHTML =
+                Calificación Final: ${calificacionFinal.toFixed(2)};
+        }
+    </script>
+
+</body>
+</html>
