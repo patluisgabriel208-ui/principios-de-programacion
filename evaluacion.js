@@ -49,7 +49,7 @@
 
 
 // ---------------------------------------------------------
-// Ejercicio 6 — Ciclo for
+// (+1) Ejercicio 6 — Ciclo for
 // Usa un ciclo for para imprimir los números del 1 al 10,
 // pero saltándote el número 5 (que no se imprima).
 // ---------------------------------------------------------
@@ -65,7 +65,7 @@
 
 
 // ---------------------------------------------------------
-// Ejercicio 8 — Ciclo + decisión
+// (+1) Ejercicio 8 — Ciclo + decisión
 // Dado el arreglo: [8, 15, 23, 42, 7, 18, 30, 5]
 // Recórrelo con un ciclo e imprime solo los números mayores
 // a 10.
@@ -74,7 +74,7 @@
 
 
 // ---------------------------------------------------------
-// Ejercicio 9 — JSON (objeto)
+// (+2) Ejercicio 9 — JSON (objeto)
 // Crea un objeto JSON que represente un libro con:
 // título, autor, año, y disponible (booleano).
 // Imprime el título del libro y si está disponible o no.
@@ -83,7 +83,7 @@
 
 
 // ---------------------------------------------------------
-// Ejercicio 10 — JSON (arreglo de objetos)
+// (+2) Ejercicio 10 — JSON (arreglo de objetos)
 // Dado el siguiente arreglo de productos:
 // const productos = [
 //   { nombre: "Manzana", precio: 12, stock: 40 },
@@ -97,7 +97,7 @@
 
 
 // ---------------------------------------------------------
-// Ejercicio 11 — Todo junto
+// (+2) Ejercicio 11 — Todo junto
 // Dado el siguiente arreglo de estudiantes:
 // const estudiantes = [
 //   { nombre: "Ana", calificacion: 85, asistencias: 10 },
